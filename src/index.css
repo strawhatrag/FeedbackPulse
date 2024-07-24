@@ -149,6 +149,7 @@ h1 *::selection {
 /* LOGO */
 .logo {
   height: 27.5px;
+  color: white;
 }
 
 .logo::selection {

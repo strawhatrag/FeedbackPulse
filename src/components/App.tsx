@@ -3,11 +3,12 @@ import Footer from "./Footer"
 import HashtagList from "./HashtagList"
 
 
+
 function App() {
   return (
-    <><Footer/>
+    <div className="app"><Footer/>
     <Container />
-    <HashtagList /></>
+    <HashtagList /></div>
    
   )
 }

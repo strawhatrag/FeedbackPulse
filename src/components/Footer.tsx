@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer><small>
+    <footer className="footer"><small>
       <p>&copy; Copyright by StrawHatRag</p></small></footer>
   )
 }
