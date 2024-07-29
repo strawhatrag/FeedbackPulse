@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {  useState } from "react";
 import { MAX_CHARACTER } from './../lib/constants';
 
 
@@ -6,15 +6,21 @@ import { MAX_CHARACTER } from './../lib/constants';
 export default function FeedBackForm() {
   const [text, setText] = useState("");
 
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const newText = event.target.value;
+    if(newText.length > MAX_CHARACTER){
+      return;
+    }
+    setText(event.target.value);
+  }
+
 
   const charCount = MAX_CHARACTER - text.length;
   return (
     <form className="form">
       <textarea
         value={text}
-        onChange={(event) => {
-          setText(event.target.value);
-        }}
+        onChange={handleChange}
         id="feedback-textarea"
         placeholder="blah"
         spellCheck={false}
