@@ -2,7 +2,7 @@
 import FeedbackItem from "./FeedbackItem";
 
 const feedbackItems = [{
-  upvoteCount: 591,
+  upVoteCount: 591,
   badgeLetter: "B",
   companyName: "Google",
   text: "test test",
